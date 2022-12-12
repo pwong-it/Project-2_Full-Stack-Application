@@ -1,4 +1,4 @@
-# Practical WingChun - Training Journal
+# Practical WingChun - Training Journal 
 The second project of my Software Engineering Immersive Course at General Aseembly. The goal is to build a full stack application where users are able to create their personal training journal and share it with other students within the school.<br/> 
 Date Received: 13/12/22<br/>
 Date Due: 16/12/22
