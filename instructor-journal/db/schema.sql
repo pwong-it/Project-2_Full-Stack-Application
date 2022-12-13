@@ -16,4 +16,7 @@ CREATE TABLE journals(
 
 INSERT INTO journals(location, date, instructor_name, other_instructor, new_students, injuries, drills, notes, image_url)
 VALUES
-    ('Wavell Heights', '08/12/22', 'Jason', 'Dilys', 2, 'none', 'Form, Pad work, Conditioning', 'One new student has previous experience in another martial art. Picked up DAY 1 drills very quickly. Other new student struggled slightly.', 'https://ibb.co/ZXgWSKS');
+    ('Wavell Heights', '08/12/22', 'Jason', 'Dilys', 2, 'none', 'Form, Pad work, Conditioning', 'One new student has previous experience in another martial art. Picked up DAY 1 drills very quickly. Other new student struggled slightly.', 'https://i.ibb.co/LZLPSK6/tiger1.png');
+
+
+UPDATE journals SET image_url = 'https://raw.githubusercontent.com/pwong-it/Project-2_Full-Stack-Application/main/images/Planning_06.png' WHERE id = 2;

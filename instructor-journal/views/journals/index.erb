@@ -1,1 +1,19 @@
 <h1>Practical Wingchun - Instructor Journal</h1>
+
+<main>
+    <section class="journals">
+        <% journals.each do |journal| %>
+            <section class="journal">
+                <section class="headers">
+                    <h2>Instructor <%= journal['instructor_name'] %></h2>
+                </section>
+                <p><%= journal['other_instructor'] %></p>
+                <p><%= journal['new_students'] %></p>
+                <p><%= journal['injuries'] %></p>
+                <p><%= journal['drills'] %></p>
+                <p><%= journal['notes'] %></p>
+            </section>
+            <img src="<%= journal['image_url'] %>" alt="">
+        <% end %>
+    </section>
+</main>
