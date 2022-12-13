@@ -49,12 +49,12 @@ Use the Problem Solving Process framework to break down the project into managea
     - Deployed to public 
     - Using fly.io 
 
-Wireframing / Conceptual Design of website - Used Canva
-![Planning Photo 2](./images/Planning_02.jpg)<br/> 
-![Planning Photo 3](./images/Planning_03.jpg)<br/> 
-![Planning Photo 4](./images/Planning_04.jpg)<br/> 
-![Planning Photo 5](./images/Planning_05.jpg)<br/> 
-![Planning Photo 6](./images/Planning_06.jpg)<br/> 
+Wireframing / Conceptual Design of website - Used Canva<br/> 
+![Planning Photo 2](./images/Planning_02.png)<br/> 
+![Planning Photo 3](./images/Planning_03.png)<br/> 
+![Planning Photo 4](./images/Planning_04.png)<br/> 
+![Planning Photo 5](./images/Planning_05.png)<br/> 
+![Planning Photo 6](./images/Planning_06.png)<br/> 
 
 2.  Tasks <br/>
     - Create homepage
@@ -65,8 +65,8 @@ Wireframing / Conceptual Design of website - Used Canva
     - Create Post page
     - Users can edit posts
     - Users can delete posts
-    - Create like button for posts
-    ![Planning Photo 7](./images/Planning_07.jpg)
+    - Create like button for posts<br/>
+    ![Planning Photo 7](./images/Planning_07.png)
 
 3.  Implement - Coding Journey and debugging.<br/> 
     Below are some "highlights" where problems arose and how I dealt with this problems. <br/> 
