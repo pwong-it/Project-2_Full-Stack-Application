@@ -1,11 +1,13 @@
-     
 require 'sinatra'
-
-get '/' do
-  erb :index
-end
-
+require 'bcrypt'
+require './db/db'
+require 'httparty'
 
 
+# controllers
+require './controllers/journals_controller'
+
+# models
+require './models/journal'
 
 

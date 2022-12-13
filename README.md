@@ -87,7 +87,7 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 - 
 
 ## :sunglasses: Lessons learnt
-1.  
+1.  Have to ensure the date style for Postgresql is set correctly.
 
 ## :white_check_mark: Future features
 - 
