@@ -1,6 +1,8 @@
+<<<<<<< HEAD
 # Practical WingChun - Instructor Journal
 The second project of my Software Engineering Immersive Course at General Aseembly. My idea for this app is directly related to one of my hobbies. I am one of many instructors at my martial arts school and the school is run on multiple locations throughout Queensland on different days.<br/> 
 So the aim for this app is to allow the users(all instructors) to be able to plan, post and share what happens in the classes with the rest of the leadership group. <br/> 
+
 Date Received: 13/12/22<br/>
 Date Due: 16/12/22
 
