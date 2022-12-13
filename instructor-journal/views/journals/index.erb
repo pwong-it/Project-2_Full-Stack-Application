@@ -1,19 +1,31 @@
-<h1>Practical Wingchun - Instructor Journal</h1>
+<header>
+    <div>
+        <img class="logo" src="/assets/images/pwc_logo.png" alt="">
+        <h1>Practical WingChun</h1>
+    </div>
+    
+</header>
+
 
 <main>
     <section class="journals">
         <% journals.each do |journal| %>
             <section class="journal">
                 <section class="headers">
+                    <p><%= journal['location'] %></p>
+                    <p><%= journal['date'] %></p>
                     <h2>Instructor <%= journal['instructor_name'] %></h2>
                 </section>
-                <p><%= journal['other_instructor'] %></p>
-                <p><%= journal['new_students'] %></p>
-                <p><%= journal['injuries'] %></p>
-                <p><%= journal['drills'] %></p>
-                <p><%= journal['notes'] %></p>
+                <img src="<%= journal['image_url'] %>" alt="">
+                <p><span>Other Instructor: </span><%= journal['other_instructor'] %></p>
+                <p><span>New Students: </span><%= journal['new_students'] %></p>
+                <p><span>Injuries: </span><%= journal['injuries'] %></p>
+                <p><span>Drills: </span><%= journal['drills'] %></p>
+                <p><span>Notes: </span><%= journal['notes'] %></p>
+                
             </section>
-            <img src="<%= journal['image_url'] %>" alt="">
+        
+            
         <% end %>
     </section>
 </main>
