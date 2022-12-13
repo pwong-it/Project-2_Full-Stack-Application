@@ -14,6 +14,7 @@ body {
 header {
     background-color: rgb(43, 43, 43);
     display: flex;
+    width: 100%;
 }
 
 .logo {
@@ -44,4 +45,35 @@ main {
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+.add_btn {
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    border: 1.5px solid white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+}
+
+input {
+    padding: 0.25rem 0.5rem;
+    width: 50%;
+    margin-bottom: 20px;
 }
