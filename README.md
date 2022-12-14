@@ -57,13 +57,13 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 ![Planning Photo 6](./images/Planning_06.png)<br/> 
 
 2.  Tasks <br/>
-    - Create homepage
-    - Create database
+    - :white_check_mark: Create homepage
+    - :white_check_mark: Create database
     - Create Sign up page
     - Create login page
     - Recent posts page only available to people who have logged in
     - Create Post page
-    - Users can edit posts
+    - :white_check_mark: Users can edit posts
     - Users can delete posts
     - Create like button for posts<br/>
     ![Planning Photo 7](./images/Planning_07.png)
@@ -71,6 +71,9 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 3.  Implement - Coding Journey and debugging.<br/> 
     Below are some "highlights" where problems arose and how I dealt with this problems. <br/> 
 
+    ### Progress
+    ![Progress 1](./images/Progress_01.png)
+    At this point I am able to create and update journal entries. One thing to note is the date is not in the format that I like. I will have to deal with this a little later. 
 
     ### For further details and complete code of the game, please feel free to click into any of the files in the repo.  
 
