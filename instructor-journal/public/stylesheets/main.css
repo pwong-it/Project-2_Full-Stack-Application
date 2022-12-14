@@ -14,6 +14,7 @@ body {
 header {
     background-color: rgb(43, 43, 43);
     display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -21,6 +22,11 @@ header {
     max-width: 40px;
     object-fit: contain;
     margin: 20px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
 }
 
 h1 {
@@ -39,6 +45,19 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.25rem;
     margin-top: 1.5rem;
+}
+
+
+a,
+button {
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    border: 1.5px solid white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .journal img {

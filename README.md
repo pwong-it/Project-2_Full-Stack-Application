@@ -75,6 +75,17 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
     ![Progress 1](./images/Progress_01.png)
     At this point I am able to create and update journal entries. One thing to note is the date is not in the format that I like. I will have to deal with this a little later. 
 
+
+    Thinking about the app and its purpose, it actually does not make sense to have a sign up page. To give a bit of background to the school, a student can only become an instructor after proving that they are at a sound level and is able to communicate effectively and give guidance to other students. They are then put through an instructor program to build on those communication and coaching skills.
+
+    Therefore, this leadership group is private and this app would not require a signup as the admin or Sifu would be the one registering the instructor for the app. Perhaps then we will create a sign up/create user page but only seen for users with the admin role. This will prevent anyone from the public to be able to sign up and use the app. 
+
+    I will go ahead and create the sign up feature for now, and work out how to only show it for the admin later. <br/> 
+    ![Progress 2](./images/Progress_02.png)<br/> 
+    Created an admin column in the user table of my database. This will allow me to single out any admins. They will have additional permissions like edit/delete all posts and also create new users. 
+
+    
+
     ### For further details and complete code of the game, please feel free to click into any of the files in the repo.  
 
 ## :rocket: Cool tech
