@@ -77,3 +77,11 @@ delete '/journals/:id' do
   delete_journal(id)
   redirect '/'
 end
+
+post '/journals/:id/likes' do
+  journal_id = params['id']
+  user_id = session['user_id']
+
+  post_like(user_id, journal_id)
+  redirect '/'
+end

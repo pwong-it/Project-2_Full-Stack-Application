@@ -104,7 +104,10 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 
     The logo, text, and button still took a while to position correctly. However, the final result looks exactly how I wanted it to look.
     <br/> 
-    
+
+    ![Progress 7](./images/Progress_07.png)<br/> 
+    One of the most frustrating things thus far was getting the edit and delete icons to work and sized correctly. In the process, somehow my Signup and Log Out button and link is now unstyled. 
+
     ### For further details and complete code of the game, please feel free to click into any of the files in the repo.  
 
 ## :rocket: Cool tech

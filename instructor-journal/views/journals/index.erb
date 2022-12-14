@@ -17,7 +17,7 @@
         <section class="new-entry">
             <h2>Welcome to the Instructor Journal <%= current_user['first_name'] %></h2>
             <h3>Finished a class?</h3>
-            <a class="add_btn" href="/journals/new">Add new entry</a>
+            <a class="submit-btn" href="/journals/new">ADD NEW ENTRY</a>
         </section>
 
         <section class="journals">
@@ -25,6 +25,9 @@
                 <section class="journal">
                     <section class="headers">
                         <section class="controls">
+                            <form action="/journals/<%= journal['id'] %>/likes" method="POST">
+                                <button><img  src="/assets/images/liked.png" alt=""></button>
+                            </form>
                             <a href="/journals/<%= journal['id'] %>/edit"><img src="/assets/images/edit-icon.png" alt=""></a>
                             <form id="delete-icon" action="/journals/<%= journal['id'] %>" method="POST">
                                 <input type="hidden" name="_method" value="delete">

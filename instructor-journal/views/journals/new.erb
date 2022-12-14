@@ -1,33 +1,23 @@
-<h1>Add a New Class Entry</h1>
+<header>
+    <div class="banner">
+        <a class="landing-logo" href="/"><img class="logo" src="/assets/images/pwc_logo.png" alt=""></a>
+    </div>
+</header>
 
-<form class="form" action="/journals" method="POST">
-    <label for="">Location: </label>
-    <input type="text" name="location">
-
-    <label for="">Date: </label>
-    <input type="text" name="date">
-
-    <label for="">Instructor: </label>
-    <input type="text" name="instructor_name">
-
-    <label for="">Additional Instructors: </label>
-    <input type="text" name="other_instructor">
-
-    <label for="">New Students: </label>
-    <input type="text" name="new_students">
-
-    <label for="">Injuries: </label>
-    <input type="text" name="injuries">
-
-    <label for="">Drills: </label>
-    <input type="text" name="drills">
-
-    <label for="">Notes: </label>
-    <input type="text" name="notes">
-
-    <label for="">Image URL </label>
-    <input type="text" name="image_url">
-
-    <button>Add Entry</button>
-
-</form>
+<div class="new-entry-page">
+    <section class="content">
+        <h1 class="title">ADD NEW ENTRY</h1> 
+        <form action="/journals" method="POST">
+            <input placeholder="Location" type="text" name="location">
+            <input placeholder="Date"type="text" name="date">
+            <input placeholder="Instructor"type="text" name="instructor_name">
+            <input placeholder="Other Instructors" type="text" name="other_instructor">
+            <input placeholder="New Students" type="text" name="new_students">
+            <input placeholder="Injuries" type="text" name="injuries">
+            <input placeholder="Drills" type="text" name="drills">
+            <input placeholder="Notes" type="text" name="notes">
+            <input placeholder="Image URL" type="text" name="image_url">
+            <button class="submit-btn" >ADD ENTRY</button>
+        </form>
+    </section>
+</div>

@@ -27,3 +27,13 @@ CREATE TABLE users(
   password_digest TEXT,
   admin BOOLEAN
 );
+
+CREATE TABLE likes(
+  id SERIAL PRIMARY KEY,
+  user_id INTEGER,
+  journal_id INTEGER
+);
+
+ALTER TABLE likes
+ADD CONSTRAINT unique_likes
+UNIQUE(user_id, journal_id);

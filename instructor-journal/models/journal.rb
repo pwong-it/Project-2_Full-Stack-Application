@@ -1,5 +1,5 @@
 def all_journals
-    run_sql('SELECT * FROM journals ORDER BY id')
+    run_sql('SELECT * FROM journals ORDER BY date DESC LIMIT 5')
 end
 
 def create_journal(location, date, instructor_name, other_instructor, new_students, injuries, drills, notes, image_url)
@@ -16,4 +16,8 @@ end
 
 def delete_journal(id)
     run_sql("DELETE FROM journals WHERE id = $1", [id])
+end
+
+def post_like(user_id, journal_id)
+    run_sql("INSERT INTO likes(user_id, journal_id) VALUES($1, $2)", [user_id, journal_id])
 end

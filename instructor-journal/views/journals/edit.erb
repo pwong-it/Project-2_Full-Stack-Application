@@ -1,35 +1,25 @@
-<h1>Edit Journal Entry</h1>
+<header>
+    <div class="banner">
+        <a class="landing-logo" href="/"><img class="logo" src="/assets/images/pwc_logo.png" alt=""></a>
+    </div>
+</header>
 
-<form class="form" action="/journals/<%= journal['id'] %>" method="POST">
-    <input type="hidden" name='_method' value="put">
+<div class="edit-entry-page">
+    <section class="content">
+        <h1 class="title">EDIT ENTRY</h1> 
+        <form action="/journals/<%= journal['id'] %>" method="POST">
+            <input type="hidden" name='_method' value="put">
 
-    <label for="">Location: </label>
-    <input type="text" name="location" value="<%= journal['location']%>">
-
-    <label for="">Date: </label>
-    <input type="text" name="date" value="<%= journal['date']%>">
-
-    <label for="">Instructor: </label>
-    <input type="text" name="instructor_name" value="<%= journal['instructor_name']%>">
-
-    <label for="">Additional Instructors: </label>
-    <input type="text" name="other_instructor" value="<%= journal['other_instructor']%>">
-
-    <label for="">New Students: </label>
-    <input type="text" name="new_students" value="<%= journal['new_students']%>">
-
-    <label for="">Injuries: </label>
-    <input type="text" name="injuries" value="<%= journal['injuries']%>">
-
-    <label for="">Drills: </label>
-    <input type="text" name="drills" value="<%= journal['drills']%>">
-
-    <label for="">Notes: </label>
-    <input type="text" name="notes" value="<%= journal['notes']%>">
-
-    <label for="">Image URL </label>
-    <input type="text" name="image_url" value="<%= journal['image_url']%>">
-
-    <button>Update Journal Entry</button>
-
-</form>
+            <input placeholder="Location" type="text" name="location" value="<%= journal['location']%>">
+            <input placeholder="Date"type="text" name="date" value="<%= journal['date']%>">
+            <input placeholder="Instructor"type="text" name="instructor_name" value="<%= journal['instructor_name']%>">
+            <input placeholder="Other Instructors" type="text" name="other_instructor" value="<%= journal['other_instructor']%>">
+            <input placeholder="New Students" type="text" name="new_students" value="<%= journal['new_students']%>">
+            <input placeholder="Injuries" type="text" name="injuries" value="<%= journal['injuries']%>">
+            <input placeholder="Drills" type="text" name="drills" value="<%= journal['drills']%>">
+            <input placeholder="Notes" type="text" name="notes" value="<%= journal['notes']%>">
+            <input placeholder="Image URL" type="text" name="image_url" value="<%= journal['image_url']%>">
+            <button class="submit-btn" >UPDATE ENTRY</button>
+        </form>
+    </section>
+</div>
