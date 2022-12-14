@@ -7,6 +7,7 @@ require 'httparty'
 # controllers
 require './controllers/journals_controller'
 require './controllers/users_controller'
+require './controllers/sessions_controller'
 
 # models
 require './models/journal'

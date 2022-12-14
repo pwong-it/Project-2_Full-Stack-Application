@@ -84,7 +84,10 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
     ![Progress 2](./images/Progress_02.png)<br/> 
     Created an admin column in the user table of my database. This will allow me to single out any admins. They will have additional permissions like edit/delete all posts and also create new users. 
 
-    
+
+    ![Progress 3](./images/Progress_03.png)<br/> 
+    Sign up and Login function implemented. Next steps is to create the page that the public will see. Only instructors who log in can enter the app and see the homepage. 
+    I also need to create a log out button. 
 
     ### For further details and complete code of the game, please feel free to click into any of the files in the repo.  
 
