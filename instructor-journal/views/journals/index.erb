@@ -3,43 +3,50 @@
         <img class="logo" src="/assets/images/pwc_logo.png" alt="">
         <h1>Practical WingChun</h1>
     </div>
-    <a href="/users/new">Sign Up</a>
-    <a href="/sessions/new">Login</a>
 </header>
 
-
-<main>
-    <section class="new_entry">
-        <h2>Finished a class?</h2>
-        <a class="add_btn" href="/journals/new">Add new entry</a>
+<% if logged_in? %>
+    <section class="welcome">
+        <h3>Welcome to the Instructor Journal <%= current_user['instructor_name'] %></h3>
+        <form action="/sessions" method="POST">
+            <input type="hidden" name="_method" value="delete">
+            <button>Log Out</button>
+        </form>
+        <a href="/users/new">Sign Up</a>
     </section>
 
-    <section class="journals">
-        <% journals.each do |journal| %>
-            <section class="journal">
-                <section class="headers">
-                    <section class="controls">
-                        <a href="/journals/<%= journal['id'] %>/edit">Edit</a>
-                        <form action="/journals/<%= journal['id'] %>" method="POST">
-                            <input type="hidden" name="_method" value="delete">
-                            <button>Delete</button>
-                        </form>
+    <main>
+        <section class="new_entry">
+            <h2>Finished a class?</h2>
+            <a class="add_btn" href="/journals/new">Add new entry</a>
+        </section>
+
+        <section class="journals">
+            <% journals.each do |journal| %>
+                <section class="journal">
+                    <section class="headers">
+                        <section class="controls">
+                            <a href="/journals/<%= journal['id'] %>/edit">Edit</a>
+                            <form action="/journals/<%= journal['id'] %>" method="POST">
+                                <input type="hidden" name="_method" value="delete">
+                                <button>Delete</button>
+                            </form>
+                        </section>
+                        <p><%= journal['location'] %></p>
+                        <p><%= journal['date'] %></p>  
                     </section>
-                    <p><%= journal['location'] %></p>
-                    <p><%= journal['date'] %></p>
                     
+                    <h2>Instructor <%= journal['instructor_name'] %></h2>
+                    <img src="<%= journal['image_url'] %>" alt="">
+                    <p><span>Other Instructor: </span><%= journal['other_instructor'] %></p>
+                    <p><span>New Students: </span><%= journal['new_students'] %></p>
+                    <p><span>Injuries: </span><%= journal['injuries'] %></p>
+                    <p><span>Drills: </span><%= journal['drills'] %></p>
+                    <p><span>Notes: </span><%= journal['notes'] %></p>
                 </section>
-                <h2>Instructor <%= journal['instructor_name'] %></h2>
-                <img src="<%= journal['image_url'] %>" alt="">
-                <p><span>Other Instructor: </span><%= journal['other_instructor'] %></p>
-                <p><span>New Students: </span><%= journal['new_students'] %></p>
-                <p><span>Injuries: </span><%= journal['injuries'] %></p>
-                <p><span>Drills: </span><%= journal['drills'] %></p>
-                <p><span>Notes: </span><%= journal['notes'] %></p>
-                
-            </section>
-        
-            
-        <% end %>
-    </section>
-</main>
+            <% end %>
+        </section>
+    </main>
+<% else %>
+    <a href="/sessions/new">Login</a>
+<% end %>

@@ -59,8 +59,8 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 2.  Tasks <br/>
     - :white_check_mark: Create homepage
     - :white_check_mark: Create database
-    - Create Sign up page
-    - Create login page
+    - :white_check_mark: Create Sign up page
+    - :white_check_mark: Create login page
     - Recent posts page only available to people who have logged in
     - Create Post page
     - :white_check_mark: Users can edit posts
@@ -81,13 +81,21 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
     Therefore, this leadership group is private and this app would not require a signup as the admin or Sifu would be the one registering the instructor for the app. Perhaps then we will create a sign up/create user page but only seen for users with the admin role. This will prevent anyone from the public to be able to sign up and use the app. 
 
     I will go ahead and create the sign up feature for now, and work out how to only show it for the admin later. <br/> 
+    <br/> 
+
     ![Progress 2](./images/Progress_02.png)<br/> 
     Created an admin column in the user table of my database. This will allow me to single out any admins. They will have additional permissions like edit/delete all posts and also create new users. 
-
+    <br/> 
 
     ![Progress 3](./images/Progress_03.png)<br/> 
     Sign up and Login function implemented. Next steps is to create the page that the public will see. Only instructors who log in can enter the app and see the homepage. 
     I also need to create a log out button. 
+    <br/> 
+
+    ![Progress 4](./images/Progress_04.png)<br/> 
+    ![Progress 5](./images/Progress_05.png)<br/> 
+    Public Only landing page implemented. Only users who log in can see what the app looks like. No sign up functionality as the school is private. Will create a link to redirect users to the official school's website though.
+    <br/>  
 
     ### For further details and complete code of the game, please feel free to click into any of the files in the repo.  
 

@@ -6,10 +6,17 @@ get '/' do
 end
 
 get '/journals/new' do
+  if !logged_in?
+    redirect '/'
+  end
+
   erb :'journals/new'
 end
 
 post '/journals' do 
+  if !logged_in?
+    redirect '/'
+  end
 
   location = params['location']
   date = params['date']
@@ -27,6 +34,10 @@ post '/journals' do
 end
 
 get '/journals/:id/edit' do
+  if !logged_in?
+    redirect '/'
+  end
+  
   id = params['id']
   journal = get_journal(id)
 
@@ -36,6 +47,10 @@ get '/journals/:id/edit' do
 end
 
 put '/journals/:id' do
+  if !logged_in?
+    redirect '/'
+  end
+  
   id = params['id']
   location = params['location']
   date = params['date']
@@ -53,6 +68,10 @@ put '/journals/:id' do
 end
 
 delete '/journals/:id' do
+  if !logged_in?
+    redirect '/'
+  end
+  
   id = params['id']
   
   delete_journal(id)
