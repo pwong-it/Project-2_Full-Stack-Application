@@ -51,3 +51,10 @@ put '/journals/:id' do
 
   redirect '/'
 end
+
+delete '/journals/:id' do
+  id = params['id']
+  
+  delete_journal(id)
+  redirect '/'
+end

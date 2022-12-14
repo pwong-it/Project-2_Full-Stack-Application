@@ -18,7 +18,9 @@
                 <section class="headers">
                     <section class="controls">
                         <a href="/journals/<%= journal['id'] %>/edit">Edit</a>
-
+                        <form action="/journals/<%= journal['id'] %>" method="POST">
+                            <input type="hidden" name="_method" value="delete">
+                            <button>Delete</button>
                         </form>
                     </section>
                     <p><%= journal['location'] %></p>

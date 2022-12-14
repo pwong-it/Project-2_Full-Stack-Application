@@ -64,7 +64,7 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
     - Recent posts page only available to people who have logged in
     - Create Post page
     - :white_check_mark: Users can edit posts
-    - Users can delete posts
+    - :white_check_mark: Users can delete posts
     - Create like button for posts<br/>
     ![Planning Photo 7](./images/Planning_07.png)
 
@@ -80,6 +80,7 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 ## :rocket: Cool tech
 - Trello - For project management
 - Canva - For Conceptual Design and graphics
+- Ruby - Language used
 - Sinatra - Backend framework on Ruby
 - Bcrypt - Security
 - PostgreSQL - Relational Database Management System
