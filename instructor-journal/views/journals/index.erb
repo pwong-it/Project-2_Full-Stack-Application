@@ -16,10 +16,16 @@
         <% journals.each do |journal| %>
             <section class="journal">
                 <section class="headers">
+                    <section class="controls">
+                        <a href="/journals/<%= journal['id'] %>/edit">Edit</a>
+
+                        </form>
+                    </section>
                     <p><%= journal['location'] %></p>
                     <p><%= journal['date'] %></p>
-                    <h2>Instructor <%= journal['instructor_name'] %></h2>
+                    
                 </section>
+                <h2>Instructor <%= journal['instructor_name'] %></h2>
                 <img src="<%= journal['image_url'] %>" alt="">
                 <p><span>Other Instructor: </span><%= journal['other_instructor'] %></p>
                 <p><span>New Students: </span><%= journal['new_students'] %></p>
