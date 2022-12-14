@@ -107,7 +107,14 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 
     ![Progress 7](./images/Progress_07.png)<br/> 
     One of the most frustrating things thus far was getting the edit and delete icons to work and sized correctly. In the process, somehow my Signup and Log Out button and link is now unstyled. 
+    <br/> 
 
+    ![Progress 8](./images/Progress_08.png)<br/> 
+    Journal entries limited to 4 on the home page. Also added a "like" button for each of the entries. Will need to fix styling issues. 
+    <br/> 
+
+    ![Progress 9](./images/Progress_09.png)<br/> 
+    Add new entry, edit entry, and sign up pages all styled. 
     ### For further details and complete code of the game, please feel free to click into any of the files in the repo.  
 
 ## :rocket: Cool tech
@@ -125,6 +132,7 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 
 ## :sunglasses: Lessons learnt
 1.  Have to ensure the date style for Postgresql is set correctly.
+2.  Do most of the CSS work BEFORE creating login sessions. Entering login details for CSS changes is a nightmare!
 
 ## :white_check_mark: Future features
 - 
