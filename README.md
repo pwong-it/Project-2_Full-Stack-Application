@@ -97,6 +97,14 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
     Public Only landing page implemented. Only users who log in can see what the app looks like. No sign up functionality as the school is private. Will create a link to redirect users to the official school's website though.
     <br/>  
 
+    ![Progress 6](./images/Progress_06.png)<br/> 
+    I struggled very hard with the landing page. I wanted to make the background image transparent with a bit of dark tint added so that the text and logo pops out. However it was through trial and error and a lot of googling to find that once the text is a child of the background container which is transparent, the child will also be equally transparent. 
+
+    With the amount of time spent on this, I figured I would use my previous design skills and apply the right tint to the background image using photoshop. 
+
+    The logo, text, and button still took a while to position correctly. However, the final result looks exactly how I wanted it to look.
+    <br/> 
+    
     ### For further details and complete code of the game, please feel free to click into any of the files in the repo.  
 
 ## :rocket: Cool tech

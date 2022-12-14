@@ -1,11 +1,12 @@
-<header>
-    <div class="banner">
-        <img class="logo" src="/assets/images/pwc_logo.png" alt="">
-        <h1>Practical WingChun</h1>
-    </div>
-</header>
+
 
 <% if logged_in? %>
+    <header>
+        <div class="banner">
+            <img class="logo" src="/assets/images/pwc_logo.png" alt="">
+            <h1>Practical WingChun</h1>
+        </div>
+    </header>
     <section class="welcome">
         <h3>Welcome to the Instructor Journal <%= current_user['instructor_name'] %></h3>
         <form action="/sessions" method="POST">
@@ -35,7 +36,7 @@
                         <p><%= journal['location'] %></p>
                         <p><%= journal['date'] %></p>  
                     </section>
-                    
+
                     <h2>Instructor <%= journal['instructor_name'] %></h2>
                     <img src="<%= journal['image_url'] %>" alt="">
                     <p><span>Other Instructor: </span><%= journal['other_instructor'] %></p>
@@ -48,5 +49,12 @@
         </section>
     </main>
 <% else %>
-    <a href="/sessions/new">Login</a>
+    <div class="landing-page">
+    <section class="landing-content">
+        <img class="landing-logo" src="/assets/images/pwc_logo.png" alt="">
+        <h1 class="landing-name">PRACTICAL WING CHUN</h1> 
+        <a class="login-btn" href="/sessions/new">INSTRUCTOR LOGIN</a> 
+    </section>
+        
+    </div>
 <% end %>
