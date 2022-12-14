@@ -1,5 +1,6 @@
 /* Colours */
-/* Charcoal - rgb(43, 43, 43) */
+/* Charcoal - rgb(20, 20, 20) */
+/* Yellow - rgb(255, 218, 10); */
 
 * {
     box-sizing: border-box;
@@ -9,7 +10,7 @@
 
 body {
     margin: 0;
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(48, 48, 48);
 }
 
 .landing-page {
@@ -51,6 +52,12 @@ body {
     cursor: pointer;
 }
 
+.landing-btn:hover {
+    color: rgb(255, 218, 10);
+    border: 1.5px solid rgb(255, 218, 10);
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s
+}
 
 .login-page {
     background: url("/assets/images/landing_bg.jpg");
@@ -69,7 +76,7 @@ body {
     margin-bottom: 100px;
 }
 
-.login-btn {
+.submit-btn {
     border: 1px solid black;
     border-radius: 5px;
     padding: 0.7rem 2.5rem;
@@ -79,6 +86,13 @@ body {
     font-size: 1rem;
     text-decoration: none;
     cursor: pointer;
+}
+
+.submit-btn:hover {
+    color: rgb(255, 218, 10);
+    border: 1.5px solid rgb(255, 218, 10);
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s
 }
 
 form {
@@ -96,28 +110,72 @@ input {
     font-size: 1rem;
 }
 
+.signup-page {
+    background: url("/assets/images/wallbag_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
 
 header {
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(20, 20, 20);
     display: flex;
-    justify-content: space-between;
+
     width: 100%;
 }
 
 .logo {
-    max-width: 40px;
+    max-width: 50px;
     object-fit: contain;
-    margin: 20px;
+    margin: 10px;
 }
 
 .banner {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
+
+
+.logout-form button {
+    border: none;
+}
+
+.right-controls {
+    display: flex;
+    color: white;
+    background-color: rgb(20, 20, 20);
+
+}
+
+.new-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 h1,
 h3 {
     color: white;
+}
+
+
+
+h3 {
+    margin: 10px;
 }
 
 
@@ -135,23 +193,48 @@ main {
     margin-top: 1.5rem;
 }
 
-
-
-button {
-    border: 1px solid black;
-    padding: 0.5rem 1rem;
-    background-color: black;
-    color: white;
-    border: 1.5px solid white;
-    font-size: 0.8rem;
-    text-decoration: none;
-    cursor: pointer;
+.journal {
+    border: 2px solid rgb(255, 218, 10);
+    background: white;
+    color: black;
+    border-radius: 15px;
+    padding: 8px;
 }
+
 
 .journal img {
     width: 100%;
     height: 300px;
     object-fit: cover;
+
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.controls img {
+    height: 35px;
+    cursor: pointer;
+}
+
+#delete-icon {
+    width: 35px;
+}
+
+#delete-icon button {
+    padding: 0;
+    background-color: rgba(20, 20, 20, 0);
+    border: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+span {
+    font-weight: 700;
 }
 
 .add_btn {

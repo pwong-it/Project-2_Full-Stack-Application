@@ -1,24 +1,22 @@
 
-
 <% if logged_in? %>
     <header>
-        <div class="banner">
+        <section class="banner">
             <img class="logo" src="/assets/images/pwc_logo.png" alt="">
-            <h1>Practical WingChun</h1>
-        </div>
+            <section class="right-controls">
+                <a class="signup" href="/users/new">Sign Up</a>
+                <form class="logout-form" action="/sessions" method="POST">
+                    <input type="hidden" name="_method" value="delete">
+                    <button>Log Out</button>
+                </form>
+            </section>
+        </section>
     </header>
-    <section class="welcome">
-        <h3>Welcome to the Instructor Journal <%= current_user['instructor_name'] %></h3>
-        <form action="/sessions" method="POST">
-            <input type="hidden" name="_method" value="delete">
-            <button>Log Out</button>
-        </form>
-        <a href="/users/new">Sign Up</a>
-    </section>
 
     <main>
-        <section class="new_entry">
-            <h2>Finished a class?</h2>
+        <section class="new-entry">
+            <h2>Welcome to the Instructor Journal <%= current_user['first_name'] %></h2>
+            <h3>Finished a class?</h3>
             <a class="add_btn" href="/journals/new">Add new entry</a>
         </section>
 
@@ -27,14 +25,14 @@
                 <section class="journal">
                     <section class="headers">
                         <section class="controls">
-                            <a href="/journals/<%= journal['id'] %>/edit">Edit</a>
-                            <form action="/journals/<%= journal['id'] %>" method="POST">
+                            <a href="/journals/<%= journal['id'] %>/edit"><img src="/assets/images/edit-icon.png" alt=""></a>
+                            <form id="delete-icon" action="/journals/<%= journal['id'] %>" method="POST">
                                 <input type="hidden" name="_method" value="delete">
-                                <button>Delete</button>
+                                <button><img  src="/assets/images/delete-icon.png" alt=""></button>
                             </form>
                         </section>
-                        <p><%= journal['location'] %></p>
-                        <p><%= journal['date'] %></p>  
+                        <p><span><%= journal['location'] %></span></p>
+                        <p><span><%= journal['date'] %></span></p>  
                     </section>
 
                     <h2>Instructor <%= journal['instructor_name'] %></h2>
@@ -54,7 +52,6 @@
         <a class="landing-logo" href="https://www.practicalwingchunkungfu.com/" target="_blank" rel="noopener noreferrer"><img class="landing-logo" src="/assets/images/pwc_logo.png" alt=""></a>
         <h1 class="title">PRACTICAL WING CHUN</h1> 
         <a class="landing-btn" href="/sessions/new">INSTRUCTOR LOGIN</a> 
-    </section>
-        
+    </section>    
     </div>
 <% end %>
