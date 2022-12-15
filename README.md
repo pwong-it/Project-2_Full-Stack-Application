@@ -115,6 +115,9 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 
     ![Progress 9](./images/Progress_09.png)<br/> 
     Add new entry, edit entry, and sign up pages all styled. 
+
+    ![Progress 10](./images/Progress_10.png)<br/> 
+    App deployed successfully! One thing that I did not consider was that once deployed, the database will be fresh. Since I do not have a signup page on the landing page, I had to temporarily create a signup button on the landing and created the admin login again. Then deleted the button. 
     ### For further details and complete code of the game, please feel free to click into any of the files in the repo.  
 
 ## :rocket: Cool tech
@@ -133,6 +136,8 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 ## :sunglasses: Lessons learnt
 1.  Have to ensure the date style for Postgresql is set correctly.
 2.  Do most of the CSS work BEFORE creating login sessions. Entering login details for CSS changes is a nightmare!
+3.  Be mindful of not having a signup page on the landing page. If database gets wiped out for whatever reason, you will need to recreate a sign up button on the landing page, as the app is private.
+4.  
 
 ## :white_check_mark: Future features
 - 

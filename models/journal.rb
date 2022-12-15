@@ -1,5 +1,9 @@
-def all_journals
+def recent_journals
     run_sql('SELECT * FROM journals ORDER BY date DESC LIMIT 4')
+end
+
+def all_journals
+    run_sql('SELECT * FROM journals ORDER BY date DESC')
 end
 
 def create_journal(location, date, instructor_name, other_instructor, new_students, injuries, drills, notes, image_url)

@@ -1,22 +1,29 @@
 get '/' do
-    journals = all_journals()
+    journals = recent_journals()
     erb :'journals/index', locals: {
       journals: journals
     }
 end
 
+get '/journals/all' do
+  journals = all_journals()
+  erb :'journals/all', locals: {
+    journals: journals
+  }
+end
+
 get '/journals/new' do
-  if !logged_in?
-    redirect '/'
-  end
+  # if !logged_in?
+  #   redirect '/'
+  # end
 
   erb :'journals/new'
 end
 
 post '/journals' do 
-  if !logged_in?
-    redirect '/'
-  end
+  # if !logged_in?
+  #   redirect '/'
+  # end
 
   location = params['location']
   date = params['date']
@@ -34,9 +41,9 @@ post '/journals' do
 end
 
 get '/journals/:id/edit' do
-  if !logged_in?
-    redirect '/'
-  end
+  # if !logged_in?
+  #   redirect '/'
+  # end
   
   id = params['id']
   journal = get_journal(id)
@@ -47,9 +54,9 @@ get '/journals/:id/edit' do
 end
 
 put '/journals/:id' do
-  if !logged_in?
-    redirect '/'
-  end
+  # if !logged_in?
+  #   redirect '/'
+  # end
   
   id = params['id']
   location = params['location']
@@ -68,9 +75,9 @@ put '/journals/:id' do
 end
 
 delete '/journals/:id' do
-  if !logged_in?
-    redirect '/'
-  end
+  # if !logged_in?
+  #   redirect '/'
+  # end
   
   id = params['id']
   

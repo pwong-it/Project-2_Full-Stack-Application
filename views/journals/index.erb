@@ -15,7 +15,7 @@
 
     <main>
         <section class="new-entry">
-            <h2>Welcome to the Instructor Journal <%= current_user['first_name'] %></h2>
+            <h2>Welcome <%= current_user['first_name'] %></h2>
             <h3>Finished a class?</h3>
             <a class="submit-btn" href="/journals/new">ADD NEW ENTRY</a>
         </section>
@@ -47,6 +47,9 @@
                     <p><span>Notes: </span><%= journal['notes'] %></p>
                 </section>
             <% end %>
+        </section>
+        <section class="new-entry">
+            <a class="view-btn" href="/journals/all">VIEW MORE</a>
         </section>
     </main>
 <% else %>

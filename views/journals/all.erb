@@ -1,0 +1,38 @@
+<header>
+    <div class="banner">
+        <a class="landing-logo" href="/"><img class="logo" src="/assets/images/pwc_logo.png" alt=""></a>
+    </div>
+</header>
+<main>
+    <section class="new-entry">
+        <h2>All Journal Entries</h2>
+    </section>
+    <section class="journals">
+        <% journals.each do |journal| %>
+            <section class="journal">
+                <section class="headers">
+                    <section class="controls">
+                        <form action="/journals/<%= journal['id'] %>/likes" method="POST">
+                            <button><img  src="/assets/images/liked.png" alt=""></button>
+                        </form>
+                        <a href="/journals/<%= journal['id'] %>/edit"><img src="/assets/images/edit-icon.png" alt=""></a>
+                        <form id="delete-icon" action="/journals/<%= journal['id'] %>" method="POST">
+                            <input type="hidden" name="_method" value="delete">
+                            <button><img  src="/assets/images/delete-icon.png" alt=""></button>
+                        </form>
+                    </section>
+                    <p><span><%= journal['location'] %></span></p>
+                    <p><span><%= journal['date'] %></span></p>  
+                </section>
+
+                <h2>Instructor <%= journal['instructor_name'] %></h2>
+                <img src="<%= journal['image_url'] %>" alt="">
+                <p><span>Other Instructor: </span><%= journal['other_instructor'] %></p>
+                <p><span>New Students: </span><%= journal['new_students'] %></p>
+                <p><span>Injuries: </span><%= journal['injuries'] %></p>
+                <p><span>Drills: </span><%= journal['drills'] %></p>
+                <p><span>Notes: </span><%= journal['notes'] %></p>
+            </section>
+        <% end %>
+    </section>
+</main>
