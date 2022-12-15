@@ -5,7 +5,7 @@ So the aim for this app is to allow the users(all instructors) to be able to pla
 Date Received: 13/12/22<br/>
 Date Due: 16/12/22
 
-## :computer: [Click here] to see my live project!
+## :computer: [Click here](https://pwc-instructor-journal.fly.dev/) to see my live project!
 
 ## :page_facing_up: About
 The below are the criteria set out by the course that I will need to meet:

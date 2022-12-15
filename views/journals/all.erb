@@ -13,18 +13,18 @@
             <section class="journal">
                 <section class="headers">
                     <section class="controls">
-                        <form action="/journals/<%= journal['id'] %>/likes" method="POST">
+                        <form class="form-icon" action="/journals/<%= journal['id'] %>/likes" method="POST">
                         <% if check_likes(current_user['id'], journal['id']) %>
-                            <button><img  src="/assets/images/liked.png" alt=""></button>
+                            <button class="icon-btn"><img  src="/assets/images/liked.png" alt=""></button>
                         <% else %>
-                            <button><img  src="/assets/images/unliked.png" alt=""></button>
+                            <button class="icon-btn"><img  src="/assets/images/unliked.png" alt=""></button>
                         <% end %>
                         </form>
                         <% if current_user['id'] == journal['user_id'] || admin? %>
-                            <a href="/journals/<%= journal['id'] %>/edit"><img src="/assets/images/edit-icon.png" alt=""></a>
-                            <form id="delete-icon" action="/journals/<%= journal['id'] %>" method="POST">
+                            <a class="icon-btn" href="/journals/<%= journal['id'] %>/edit"><img src="/assets/images/edit-icon.png" alt=""></a>
+                            <form class="form-icon" action="/journals/<%= journal['id'] %>" method="POST">
                                 <input type="hidden" name="_method" value="delete">
-                                <button><img  src="/assets/images/delete-icon.png" alt=""></button>
+                                <button class="icon-btn"><img  src="/assets/images/delete-icon.png" alt=""></button>
                             </form>
                         <% end %>
                     </section>
