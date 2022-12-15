@@ -146,6 +146,7 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 - Bcrypt - Security
 - PostgreSQL - Relational Database Management System
 - Fly.io - To deploy full stack apps and databases
+- Photoshop - A few images editing
 
 
 ## :scream: Bugs to fix :bug:
@@ -154,10 +155,11 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 
 ## :sunglasses: Lessons learnt
 1.  Have to ensure the date style for Postgresql is set correctly.
-2.  Do most of the CSS work BEFORE creating login sessions. Entering login details for CSS changes is a nightmare!
+2.  Do most of the CSS work BEFORE creating login sessions. Entering login details for CSS changes is a nightmare! OR temporary remove the loggin in code until the end.
 3.  Be mindful of not having a signup page on the landing page. If database gets wiped out for whatever reason, you will need to recreate a sign up button on the landing page, as the app is private.
 4.  Testing the code on the HTML pages. Have a visual on what each part of the code is doing. 
 5.  Test, retest, and test some more. 
+
 
 ## :white_check_mark: Future features
 - The "all entries" page to be populated with all entries. Images and only the location, date, and instructor name to be displayed. This allows more entries to fit on page. Users can then click into it to have a full page view of each entry.
@@ -166,4 +168,7 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 - Ability to upload multiple images for each journal entry. 
 - Drills & exercise library. Drag and drop from library into the journal to populate that section
 
+## Conclusions
+This was a project that I thought had a lot of meaning. I had a real world problem to solve for a real world client. I talked to my Sifu and he loved the idea at the beginning. I do believe that with more time, I could build this app into something the leadership could use to share information and also access historic data that's been saved. Especially the injuries and new student data that is stored. Eventually, it'll have a library of drills and exercises and the planning feature for the app can be created. 
 
+Overall this project was tough, especially with making sure the paths connected throughout when implementing the database. I'm proud of what has been built and happy with the design elements. Very keen to build the next thing!
