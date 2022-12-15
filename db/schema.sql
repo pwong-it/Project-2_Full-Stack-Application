@@ -5,7 +5,7 @@ CREATE TABLE journals(
     id SERIAL PRIMARY KEY,
     location TEXT,
     date DATE,
-    instructor_name TEXT,
+    user_id INTEGER,
     other_instructor TEXT,
     new_students INTEGER,
     injuries TEXT,
@@ -14,9 +14,9 @@ CREATE TABLE journals(
     image_url TEXT
 );
 
-INSERT INTO journals(location, date, instructor_name, other_instructor, new_students, injuries, drills, notes, image_url)
+INSERT INTO journals(location, date, other_instructor, new_students, injuries, drills, notes, image_url)
 VALUES
-    ('Wavell Heights', '08/12/22', 'Jason', 'Dilys', 2, 'none', 'Form, Pad work, Conditioning', 'One new student has previous experience in another martial art. Picked up DAY 1 drills very quickly. Other new student struggled slightly.', 'https://github.com/pwong-it/Project-2_Full-Stack-Application/blob/main/images/Journal%20Images/martial%20arts%20class.jpg?raw=true');
+    ('Wavell Heights', '08/12/22', 'Dilys', 2, 'none', 'Form, Pad work, Conditioning', 'One new student has previous experience in another martial art. Picked up DAY 1 drills very quickly. Other new student struggled slightly.', 'https://github.com/pwong-it/Project-2_Full-Stack-Application/blob/main/images/Journal%20Images/martial%20arts%20class.jpg?raw=true');
 
 
 CREATE TABLE users(

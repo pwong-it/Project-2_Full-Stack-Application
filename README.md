@@ -61,11 +61,11 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
     - :white_check_mark: Create database
     - :white_check_mark: Create Sign up page
     - :white_check_mark: Create login page
-    - Recent posts page only available to people who have logged in
-    - Create Post page
+    - :white_check_mark: Recent posts page only available to people who have logged in
+    - :white_check_mark: Create Post page
     - :white_check_mark: Users can edit posts
     - :white_check_mark: Users can delete posts
-    - Create like button for posts<br/>
+    - :white_check_mark: Create like button for posts<br/>
     ![Planning Photo 7](./images/Planning_07.png)
 
 3.  Implement - Coding Journey and debugging.<br/> 
@@ -118,6 +118,24 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 
     ![Progress 10](./images/Progress_10.png)<br/> 
     App deployed successfully! One thing that I did not consider was that once deployed, the database will be fresh. Since I do not have a signup page on the landing page, I had to temporarily create a signup button on the landing and created the admin login again. Then deleted the button. 
+
+    ![Progress 11](./images/Progress_11.png)<br/>
+    I can confidently say that the most difficult part of this project is getting the user_id to communicate with the journal's user_id. The problem is that the user should not have the need to input their own "instructor name" whilst creating the journal entry. It should already be taken automatically since they are logged in. 
+    ![Progress 11a](./images/Progress_11a.png)<br/>
+    It was a long time of trial and error, testing and retesting to get the correct output that I needed. Throughout this course so far, I believe today has been the most difficult. 
+
+    After getting the user_id to display correctly, the next problem was making sure that the user who created the journal entry is the only person who can edit/delete that particular entry. Because the user_id has been established, I was able to check if the current user's id is the same as the user id that created the journal. If it was, then they would be able to see the icons. The other thing I wanted to add was that user's who had the admin permissions should be able to edit/delete all posts. So I added OR to the condition which works. 
+
+    ![Progress 12](./images/Progress_12.png)<br/>
+    Finally, for the last big part of this project that I can fit in before the deadline, I wanted a toggle for the like button. Where if it is off, the fist will be grey, when on, it will be yellow. It needed to first check whether there was a like. If there was, then run the SQL query to delete the row from likes. Else, insert the like into the row of the likes table. 
+
+    This worked and after testing, I was able to see the likes appearing on/off the database table. However, I wanted to make it visually appear on the website. So I put an if/else statement in the HTML and had two images (liked = yellow, unliked = grey) to display them differently. 
+
+    ![Progress 13](./images/Progress_13.png)<br/>
+    The functionality part of the app is working well. There is definitely some more features I had in mind to implement but at this stage I am very happy with what I have accomplished. There is just a few CSS styling corrections that I would like to make. 
+
+
+
     ### For further details and complete code of the game, please feel free to click into any of the files in the repo.  
 
 ## :rocket: Cool tech
@@ -131,15 +149,21 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
 
 
 ## :scream: Bugs to fix :bug:
-- 
+- A long string of words in the notes will run out of the boundaries. CSS will be able to fix it.
+![Bugs 1](./images/bugs_01.png)<br/>
 
 ## :sunglasses: Lessons learnt
 1.  Have to ensure the date style for Postgresql is set correctly.
 2.  Do most of the CSS work BEFORE creating login sessions. Entering login details for CSS changes is a nightmare!
 3.  Be mindful of not having a signup page on the landing page. If database gets wiped out for whatever reason, you will need to recreate a sign up button on the landing page, as the app is private.
-4.  
+4.  Testing the code on the HTML pages. Have a visual on what each part of the code is doing. 
+5.  Test, retest, and test some more. 
 
 ## :white_check_mark: Future features
-- 
+- The "all entries" page to be populated with all entries. Images and only the location, date, and instructor name to be displayed. This allows more entries to fit on page. Users can then click into it to have a full page view of each entry.
+- Upload image functionality from user's devices. 
+- Integrate the upload image with the injury. So that users can upload the picture of the incident reports.
+- Ability to upload multiple images for each journal entry. 
+- Drills & exercise library. Drag and drop from library into the journal to populate that section
 
 

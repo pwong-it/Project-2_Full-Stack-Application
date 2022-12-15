@@ -13,3 +13,14 @@ def current_user
         nil
     end
 end
+
+def admin?
+    if logged_in?
+        if check_admin_status(session['user_id'])["admin"] == "t"
+            return true
+        else
+            return false
+        end
+    end
+end
+

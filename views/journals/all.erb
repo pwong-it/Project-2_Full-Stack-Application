@@ -3,29 +3,36 @@
         <a class="landing-logo" href="/"><img class="logo" src="/assets/images/pwc_logo.png" alt=""></a>
     </div>
 </header>
+
 <main>
     <section class="new-entry">
         <h2>All Journal Entries</h2>
     </section>
     <section class="journals">
-        <% journals.each do |journal| %>
+        <% journals.each_with_index do |journal, i| %>
             <section class="journal">
                 <section class="headers">
                     <section class="controls">
                         <form action="/journals/<%= journal['id'] %>/likes" method="POST">
+                        <% if check_likes(current_user['id'], journal['id']) %>
                             <button><img  src="/assets/images/liked.png" alt=""></button>
+                        <% else %>
+                            <button><img  src="/assets/images/unliked.png" alt=""></button>
+                        <% end %>
                         </form>
-                        <a href="/journals/<%= journal['id'] %>/edit"><img src="/assets/images/edit-icon.png" alt=""></a>
-                        <form id="delete-icon" action="/journals/<%= journal['id'] %>" method="POST">
-                            <input type="hidden" name="_method" value="delete">
-                            <button><img  src="/assets/images/delete-icon.png" alt=""></button>
-                        </form>
+                        <% if current_user['id'] == journal['user_id'] || admin? %>
+                            <a href="/journals/<%= journal['id'] %>/edit"><img src="/assets/images/edit-icon.png" alt=""></a>
+                            <form id="delete-icon" action="/journals/<%= journal['id'] %>" method="POST">
+                                <input type="hidden" name="_method" value="delete">
+                                <button><img  src="/assets/images/delete-icon.png" alt=""></button>
+                            </form>
+                        <% end %>
                     </section>
                     <p><span><%= journal['location'] %></span></p>
                     <p><span><%= journal['date'] %></span></p>  
                 </section>
 
-                <h2>Instructor <%= journal['instructor_name'] %></h2>
+                <h2>Instructor <%= user_id[i] %></h2>
                 <img src="<%= journal['image_url'] %>" alt="">
                 <p><span>Other Instructor: </span><%= journal['other_instructor'] %></p>
                 <p><span>New Students: </span><%= journal['new_students'] %></p>
