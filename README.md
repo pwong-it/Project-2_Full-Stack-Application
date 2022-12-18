@@ -134,9 +134,13 @@ Wireframing / Conceptual Design of website - Used Canva<br/>
     ![Progress 13](./images/Progress_13.png)<br/>
     The functionality part of the app is working well. There is definitely some more features I had in mind to implement but at this stage I am very happy with what I have accomplished. There is just a few CSS styling corrections that I would like to make. 
 
+    ### For further details and complete code of the app, please feel free to click into any of the files in the repo.  
 
+### Post-Development
 
-    ### For further details and complete code of the game, please feel free to click into any of the files in the repo.  
+-   Added Creator tag on landing page with link to Github
+-   Added date input style for "Add entry" page for better UX
+
 
 ## :rocket: Cool tech
 - Trello - For project management

@@ -14,6 +14,7 @@ body {
 
 main {
     font-family: Arial, Helvetica, sans-serif;
+
     max-width: 90%;
     margin: 0 auto;
     color: white;
@@ -28,6 +29,7 @@ main {
     background-size: cover;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -38,6 +40,27 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 400px;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+
+}
+
+.created {
+    color: white;
+    margin: 0;
+}
+
+.github-logo {
+    width: 25px;
+    padding-right: 5px;
+}
+
+.github-link {
+    color: white;
+    text-decoration: none;
 }
 
 .title {
